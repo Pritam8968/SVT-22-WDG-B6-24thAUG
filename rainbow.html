@@ -1,0 +1,63 @@
+<!-- create a header and under that there will be 7 divs with rainbow colors-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rainbow</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.header {
+				height: 50px;
+				background: linear-gradient(120deg, violet, indigo, blue, green, yellow, orange, red);
+				border: 2px solid black;
+			}
+			.strip {
+				height: 659px;
+				width: 14.15%;
+				float: left;
+				border-left: 1.05px solid black;
+				border-right: 1px solid black;
+				text-align: center;
+				line-height: 659px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.violet {
+				background-color: violet;
+			}
+			.indigo {
+				background-color: indigo;
+			}
+			.blue {
+				background-color: blue;
+			}
+			.green {
+				background-color: green;
+			}
+			.yellow {
+				background-color: yellow;
+			}
+			.orange {
+				background-color: orange;
+			}
+			.red {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="strip violet">Violet</div>
+		<div class="strip indigo">Indigo</div>
+		<div class="strip blue">blue</div>
+		<div class="strip green">green</div>
+		<div class="strip yellow">yellow</div>
+		<div class="strip orange">orange</div>
+		<div class="strip red">red</div>
+	</body>
+</html>
