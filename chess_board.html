@@ -10,21 +10,23 @@
 				box-sizing: border-box;
 				margin: 0;
 				padding: 0;
-				text-decoration: none;
 			}
-			body{
+			body {
 				background-color: #313131;
 			}
-			#chess-board {
-				height: 668px;
-				width: 44%;
-				/* border: 2px solid white; */
-				margin: 21px auto;
+			.chess-board {
+				height: 670px;
+				width: 670px;
+				border: 4px solid green;
+				margin: 20px auto;
 			}
-			.box{
-				height:83.55px;
+			.black,
+			.white {
 				width: 12.5%;
+				height: 12.5%;
 				float: left;
+				text-align: center;
+				font-size: 60px;
 			}
 			.black {
 				background-color: #769656;
@@ -35,87 +37,79 @@
 		</style>
 	</head>
 	<body>
-		<div id="chess-board">
-			<div id="rank8">
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-			</div>
-			<div id="rank7">
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-			</div>
-			<div id="rank6">
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-			</div>
-			<div id="rank5">
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-			</div>
-			<div id="rank4">
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-			</div>
-			<div id="rank3">
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-			</div>
-			<div id="rank2">
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-			</div>
-			<div id="rank1">
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-				<div class="box black"></div>
-				<div class="box white"></div>
-			</div>
+		<div class="chess-board">
+			<!-- Rank 8 -->
+			<div class="white">&#9820;</div>
+			<div class="black">&#9822;</div>
+			<div class="white">&#9821;</div>
+			<div class="black">&#9819;</div>
+			<div class="white">&#9818;</div>
+			<div class="black">&#9821;</div>
+			<div class="white">&#9822;</div>
+			<div class="black">&#9820;</div>
+			<!-- Rank 7 -->
+			<div class="black">&#9823;</div>
+			<div class="white">&#9823;</div>
+			<div class="black">&#9823;</div>
+			<div class="white">&#9823;</div>
+			<div class="black">&#9823;</div>
+			<div class="white">&#9823;</div>
+			<div class="black">&#9823;</div>
+			<div class="white">&#9823;</div>
+			<!-- Rank 6 -->
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<!-- Rank 5 -->
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<!-- Rank 4 -->
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<!-- Rank 3 -->
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<div class="black"></div>
+			<div class="white"></div>
+			<!-- Rank 2 -->
+			<div class="white">&#9817;</div>
+			<div class="black">&#9817;</div>
+			<div class="white">&#9817;</div>
+			<div class="black">&#9817;</div>
+			<div class="white">&#9817;</div>
+			<div class="black">&#9817;</div>
+			<div class="white">&#9817;</div>
+			<div class="black">&#9817;</div>
+			<!-- Rank 1 -->
+			<div class="black">&#9814;</div>
+			<div class="white">&#9816;</div>
+			<div class="black">&#9815;</div>
+			<div class="white">&#9813;</div>
+			<div class="black">&#9812;</div>
+			<div class="white">&#9815;</div>
+			<div class="black">&#9816;</div>
+			<div class="white">&#9814;</div>
 		</div>
 	</body>
 </html>
