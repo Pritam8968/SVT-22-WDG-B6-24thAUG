@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="Pritam Sarkar" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chess Board</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				background-color: #505050;
+			}
+			header {
+				background-color: #333;
+				height: 50px;
+			}
+			header h1 {
+				color: white;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				text-align: center;
+				line-height: 50px;
+				margin-top: 0;
+			}
+			div.chess-board {
+				height: 600px;
+				width: 600px;
+				border: green 4px solid;
+				margin: 20px auto;
+			}
+			div.chess-board .square {
+				height: 12.5%;
+				width: 12.5%;
+				float: left;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			div.chess-board .square .piece {
+				font-size: 4rem;
+			}
+			div.chess-board .black {
+				background-color: #769656;
+			}
+			div.chess-board .white {
+				background-color: #eeeed2;
+			}
+			@media screen and (max-width: 600px) {
+				div.chess-board {
+					height: 500px;
+					width: 100%;
+				}
+                div.chess-board .square .piece{
+                    font-size: 2rem;
+                }
+			}
+		</style>
+	</head>
+	<body>
+		<!-- header -->
+		<header><h1>Chess Board</h1></header>
+		<!-- the board -->
+		<div class="chess-board">
+			<!-- Rank 8 -->
+			<div class="square white"><div class="piece">&#9820;</div></div>
+			<div class="square black"><div class="piece">&#9822;</div></div>
+			<div class="square white"><div class="piece">&#9821;</div></div>
+			<div class="square black"><div class="piece">&#9819;</div></div>
+			<div class="square white"><div class="piece">&#9818;</div></div>
+			<div class="square black"><div class="piece">&#9821;</div></div>
+			<div class="square white"><div class="piece">&#9822;</div></div>
+			<div class="square black"><div class="piece">&#9820;</div></div>
+
+			<!-- Rank 7 -->
+			<div class="square black"><div class="piece">&#9823;</div></div>
+			<div class="square white"><div class="piece">&#9823;</div></div>
+			<div class="square black"><div class="piece">&#9823;</div></div>
+			<div class="square white"><div class="piece">&#9823;</div></div>
+			<div class="square black"><div class="piece">&#9823;</div></div>
+			<div class="square white"><div class="piece">&#9823;</div></div>
+			<div class="square black"><div class="piece">&#9823;</div></div>
+			<div class="square white"><div class="piece">&#9823;</div></div>
+
+			<!-- Rank 6 -->
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+
+			<!-- Rank 5 -->
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+
+			<!-- Rank 4 -->
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+
+			<!-- Rank 3 -->
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+			<div class="square black"></div>
+			<div class="square white"></div>
+
+			<!-- Rank 2 -->
+			<div class="square white"><div class="piece">&#9817;</div></div>
+			<div class="square black"><div class="piece">&#9817;</div></div>
+			<div class="square white"><div class="piece">&#9817;</div></div>
+			<div class="square black"><div class="piece">&#9817;</div></div>
+			<div class="square white"><div class="piece">&#9817;</div></div>
+			<div class="square black"><div class="piece">&#9817;</div></div>
+			<div class="square white"><div class="piece">&#9817;</div></div>
+			<div class="square black"><div class="piece">&#9817;</div></div>
+
+			<!-- Rank 1 -->
+			<div class="square black"><div class="piece">&#9814;</div></div>
+			<div class="square white"><div class="piece">&#9816;</div></div>
+			<div class="square black"><div class="piece">&#9815;</div></div>
+			<div class="square white"><div class="piece">&#9813;</div></div>
+			<div class="square black"><div class="piece">&#9812;</div></div>
+			<div class="square white"><div class="piece">&#9815;</div></div>
+			<div class="square black"><div class="piece">&#9816;</div></div>
+			<div class="square white"><div class="piece">&#9814;</div></div>
+		</div>
+	</body>
+</html>
