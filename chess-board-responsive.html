@@ -50,14 +50,23 @@
 			div.chess-board .white {
 				background-color: #eeeed2;
 			}
-			@media screen and (max-width: 600px) {
+			@media screen and (max-width: 420px) {
 				div.chess-board {
-					height: 500px;
+					height: 403px;
 					width: 100%;
 				}
-                div.chess-board .square .piece{
-                    font-size: 2rem;
-                }
+				div.chess-board .square .piece{
+				    font-size: 2rem;
+				}
+			}
+			@media screen and (max-width: 375px) {
+				div.chess-board {
+					height: 368px;
+					width: 100%;
+				}
+				div.chess-board .square .piece{
+				    font-size: 2rem;
+				}
 			}
 		</style>
 	</head>
