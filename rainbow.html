@@ -1,4 +1,3 @@
-<!-- create a header and under that there will be 7 divs with rainbow colors-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,53 +9,64 @@
 			body {
 				margin: 0;
 				padding: 0;
+				text-decoration: none;
 			}
-			.header {
-				height: 50px;
-				background: linear-gradient(120deg, violet, indigo, blue, green, yellow, orange, red);
-				border: 2px solid black;
+			header {
+				width: 100%;
+				height: 100px;
+				background: linear-gradient(tomato, white, green);
 			}
-			.strip {
-				height: 659px;
-				width: 14.15%;
-				float: left;
-				border-right: 1px solid black;
+			header h1 {
 				text-align: center;
-				line-height: 659px;
-				font-size: 20px;
-				font-weight: bold;
+				line-height: 100px;
+				margin-top: 0;
+				font-size: 50px;
+				font-family: "Lucida Sans", "Lucida Grande", Verdana, sans-serif;
+				color: rgb(53, 81, 220);
+				text-decoration: underline wavy 3px rgba(255, 99, 71, 0.56);
 			}
-			.violet {
-				background-color: violet;
+			div.rainbow {
+				overflow: hidden;
+				height: 100vh;
 			}
-			.indigo {
-				background-color: indigo;
+			div.strip {
+				width: 14.283%;
+				height: 100%;
+				float: left;
 			}
-			.blue {
-				background-color: blue;
+			div.violet {
+				background-color: #9400d3;
 			}
-			.green {
-				background-color: green;
+			div.indigo {
+				background-color: #4b0082;
 			}
-			.yellow {
-				background-color: yellow;
+			div.blue {
+				background-color: #0000ff;
 			}
-			.orange {
-				background-color: orange;
+			div.green {
+				background-color: #00ff00;
 			}
-			.red {
-				background-color: red;
+			div.yellow {
+				background-color: #ffff00;
+			}
+			div.orange {
+				background-color: #ff7f00;
+			}
+			div.red {
+				background-color: #ff0000;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="header"></div>
-		<div class="strip violet">Violet</div>
-		<div class="strip indigo">Indigo</div>
-		<div class="strip blue">blue</div>
-		<div class="strip green">green</div>
-		<div class="strip yellow">yellow</div>
-		<div class="strip orange">orange</div>
-		<div class="strip red">red</div>
+		<div class="rainbow">
+			<header><h1>Rainbow</h1></header>
+			<div class="strip violet"></div>
+			<div class="strip indigo"></div>
+			<div class="strip blue"></div>
+			<div class="strip green"></div>
+			<div class="strip yellow"></div>
+			<div class="strip orange"></div>
+			<div class="strip red"></div>
+		</div>
 	</body>
 </html>
